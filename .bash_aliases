@@ -1,5 +1,5 @@
 # django projects
-alias work-on-cacr='. ~/.virtualenvs/cacr/bin/activate && cd ~/ian-advent-cacr/CACR && eval $(ssh-agent)'
+alias work-on-cacr='. ~/.virtualenvs/cacr/bin/activate && cd ~/Projects/CACR && eval $(ssh-agent)'
 alias work-on-prospecto='. ~/sternshus/prospecto.us/michael-secret.env && . ~/.virtualenvs/prospecto.us/bin/activate && cd ~/sternshus/prospecto.us'
 alias work-on-bulldozer_severe='. ~/.virtualenvs/bulldozer_severe/bin/activate && cd ~/Projects/bulldozer_severe'
 
