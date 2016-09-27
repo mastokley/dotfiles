@@ -1,0 +1,273 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+\input{glyphtounicode}                             % for export
+\pdfgentounicode=1
+
+% adjust the page margins
+\usepackage[scale=0.7]{geometry}
+\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Michael}{Stokley}
+%\title{Resume}                               % optional, remove / comment the line if not wanted
+\address{Seattle, WA}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{(303) 801-8575}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{michael@michaelstokley.com}                               % optional, remove / comment the line if not wanted
+\homepage{michaelstokley.com}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{mastokley}                        % optional, remove / comment the line if not wanted
+\social[twitter]{mastokley}                             % optional, remove / comment the line if not wanted
+\social[github]{mastokley}                              % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+%\makecvtitle
+
+%\section{Profile}
+%Software developer. I'm patient enough to take difficult projects seriously, and impatient enough to automate tedious, needlessly-manual projects. In my previous accounting position, I greatly exceeded expectations by teaching myself SQL and relational database theory in order to automate the vast majority of my data entry / data quality tasks (and avoid using a cumbersome GUI). I've been learning new languages and software tools ever since.
+
+%\section{Technical Skills}
+%\cvitem{Proficient}{Python, Django, Pyramid, Git, SQL, HTML/CSS, Relational
+%  Database Theory, Unix systems, Bash, Org-mode, Scheme}
+%\cvitem{Familiar}{JavaScript, jQuery, AWS Deployment, Heroku Deployment,
+%  Ansible, PostgreSQL, Nginx, Gunicorn}
+
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+
+%\section{Projects}
+
+%\cventry{2016.04}{``Reciprocity''}{\href{http://reciprocity.site}{http://reciprocity.site}}{\href{http://github.com/TeamReciprocity/reciprocity}{github.com/TeamReciprocity/reciprocity}}{}{A
+%  full-stack Python web application for recipe sharing and collaboration. Built
+  %with Django and PostgreSQL, deployed via Ansible to an AWS EC2 instance.}
+%
+%\cventry{2016.04}{Toy Domain Scraper}{\href{https://github.com/mastokley/toy_domain_scraper}{github.com/mastokley/toy\_domain\_scraper}}{}{}{A web scraper built in Python. Uses breadth-first traversal for reliable, fast results.}
+%
+%\cventry{2016.03}{``HomeQuest''}{\href{https://github.com/homequest/homequest}{github.com/homequest/homequest}}{}{}{A full-stack Python web application to gamify household chores and chore management. We manually implemented authorization, authentication, and row-level security. Built in Pyramid with a PostgreSQL database and deployed on Heroku.}
+%
+%\cventry{2016.01}{Weather Forecast}{\href{http://michaelstokley.com/Projects/weather-forecast}{michaelstokley.com/Projects/weather-forecast}}{}{}{Straightforward front-end JavaScript project to practice DOM manipulation and third-party API consumption.}
+%
+%\cventry{2015.12}{HTML Generator}{\href{http://michaelstokley.com/Projects/HTML-generator}{michaelstokley.com/Projects/HTML-generator}}{}{}{Converts a lightweight, concise markdown into prettified, verbose HTML. Written in JavaScript.}
+%
+%\section{Experience}
+%\subsection{Recology CleanScapes, Seattle, WA}
+%\cventry{2012.04 - 2015.04}{AR Specialist}{}{}{}{%\newline{}
+%\begin{itemize}
+  %\item Wrote and maintained a library of accurate, sophisticated SQL queries to
+  %capture evolving data inconsistencies; these queries eliminated 37.5 labor
+  %hours per month despite a 126\% increase in customer accounts over a two year period
+  %\item Designed database reports for internal and external customers, such as government officials and senior management
+  %\item Delegated data entry / data revision tasks
+  %\item Collaborated with operations, data quality, payment processing, and customer service teams to analyze and improve processes as new city contracts were won
+%\end{itemize}}
+%\cventry{2011.07 - 2012.04}{Data Quality Specialist}{}{}{}{Dispatch, data entry,
+  %and customer service for the graveyard shift%\newline{}
+%\begin{itemize}
+%  \item Wrote a VBA script to automate overnight route printing
+%  \item Dispatch and 'front desk'/customer service duties for graveyard shift
+%  \item Reviewed truck video for misses and accidents
+%  \item Illegal dumping reporting for SPU
+%  \item Various clerical, reporting, and recordkeeping duties
+%\end{itemize}
+%}
+
+%\subsection{Kojen English Language School, Taipei, Taiwan}
+%\cventry{2009.10 - 2010.10}{ESL Teacher}{}{}{}{Taught high intensity ESL classes
+  %for students aged 5 - 18%\newline{}
+%\begin{itemize}
+  %\item Taught high-intensity ESL classes for children aged 5 - 18
+  %\item Resolved classroom conflicts
+  %\item Planned lessons and coordinated lesson plans with co-teachers
+  %\item Prepared end-of-class student grade reports
+%\end{itemize}
+%}
+
+%\section{Education}
+%\cventry{2016}{Certificate}{Code Fellows}{Seattle, WA}{}{Advanced Python Development}  % arguments 3 to 6 can be left empty
+%\cventry{2012 - 2014}{Coursework}{North Seattle College}{Seattle, WA}{}{Math,
+  %Statistics, and Computer Science}
+%\cventry{2009}{B. A.}{St. John's College}{Annapolis, MD}{}{Double Major:
+  %Philosophy and the History of Math and Science\newline{}Double Minor: Classical
+  %Studies and Comparative Literature}
+%\cventry{2004}{Diploma}{Niwot High School}{Niwot, CO}{}{International
+%  Baccalaureate (IB) Diploma}
+
+%\section{Experience}
+%\subsection{Vocational}
+%\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}%
+%Detailed achievements:%
+%\begin{itemize}%
+%\item Achievement 1;
+%\item Achievement 2, with sub-achievements:
+  %\begin{itemize}%
+  %\item Sub-achievement (a);
+  %\item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+    %\begin{itemize}
+    %\item Sub-sub-achievement i;
+    %\item Sub-sub-achievement ii;
+    %\item Sub-sub-achievement iii;
+    %\end{itemize}
+  %\item Sub-achievement (c);
+  %\end{itemize}
+%\item Achievement 3.
+%\end{itemize}}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
+%\subsection{Miscellaneous}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+
+%\section{Languages}
+%\cvitemwithcomment{Language 1}{Skill level}{Comment}
+%\cvitemwithcomment{Language 2}{Skill level}{Comment}
+%\cvitemwithcomment{Language 3}{Skill level}{Comment}
+
+%\section{Computer skills}
+%\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+%\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+%\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+%\section{Interests}
+%\cvitem{hobby 1}{Description}
+%\cvitem{hobby 2}{Description}
+%\cvitem{hobby 3}{Description}
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+%\section{References}
+%\begin{cvcolumns}
+%  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+
+%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+\date{\today}
+\opening{Dear Hiring Manager,}
+\closing{Sincerely,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+I am writing to apply for the ``Software Engineer (Remote)'' position at IXL.
+
+My education and my professional background make me a terrific candidate for
+this position. I studied both math and computer science for two years at North
+Seattle College (cumulative GPA 3.65). There I gained a solid grasp of computer science fundamentals and
+object-oriented design via Java, and later Python. 
+
+In addition, I recently completed a rigorous, ten-week course in Python
+development. Many coding bootcamps focus exclusively on popular frameworks and
+developer tools at the expense of basic computer science theory. The course I
+took at Code Fellows, however, placed an emphasis on data structures, basic
+algorithms, and object-oriented design. 
+
+Lastly, I have spent a great deal of time independently studying from the classic computer science textbook, \textit{The Structure and Interpretation of Computer Programs} (see my ongoing progress at {\href{http://michaelstokley.com}{michaelstokley.com}}!). This has enriched, and will continue to enrich, my understanding of functional design patterns, function decomposition, pseudocoding, encapsulation, and recursion.
+
+Altogether, these three avenues of education have provided me with a strong computer
+science foundation and excellent programming skills in Python, an object-oriented language.
+
+After completing the course at Code Fellows, I was invited to join Sternshus, a
+big data startup in Seattle. : database
+schema design, front-end development, ad-hoc shell scripting, API design and
+implementation
+
+ad-hoc shell scripting
+front-end design work using
+database schema design
+automation of project file management and with python script and regular expressions
+automated the testing of the integrity of arbitrary html files with python
+script (idempotent)
+implemented an API using Django REST framework
+
+
+Please consider the following additional qualifications. Having used Debian over
+the last four years, I have a good knowledge of Unix systems. At my previous
+position as an AR Specialist, I wrote and maintained a library of dozens of SQL
+queries, many of which I wrote on-demand for both internal and external
+customers. Finally, I have a thorough understanding of the version control
+system, Git.
+
+I encourage you to visit my personal
+website at {\href{http://michaelstokley.com}{michaelstokley.com}}. There
+you can view some of the projects I've been working on, such as a webscraper
+that uses breadth-first traversal for fast, reliable results, or a natural
+language processing script that turns tweets into poems. You may also be
+interested in viewing the final project I worked on at Code Fellows; it's a
+full-stack Python web application for recipe sharing and collaboration, built
+with Django and PostgreSQL. The site is live at
+{\href{http://reciprocity.site.}{http://reciprocity.site}}, and you can view the
+source code at {\href{http://github.com/TeamReciprocity/reciprocity}{github.com/TeamReciprocity/reciprocity}}.
+
+Thank you for considering my application. 
+
+\makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
