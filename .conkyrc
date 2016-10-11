@@ -32,19 +32,19 @@ own_window_title Bunsen Labs Default Conky
 ### Valid range is 0-255, where 0 is 0% opacity, and 255 is 100% opacity.
 # own_window_argb_value 50
 
-minimum_size 200 0  ### width | height
-maximum_width 200
+minimum_size 240 900  ### width | height
+maximum_width 440
 
-gap_x 20	### left | right
-gap_y 45	### up | down
+gap_x 20    ### left | right
+gap_y 45    ### up | down
 
-alignment tr
+alignment tl
 #######################  End Window Settings  ###
 ###  Font Settings  #############################
 # Use Xft (anti-aliased font and stuff)
 use_xft yes
-xftfont Liberation Mono:bold:size=9
-#ftfont Liberation Sans:size=9
+#xftfont Monospace:bold:size=9
+xftfont Liberation Mono:size=10
 
 # Alpha of Xft font. Must be a value at or between 1 and 0 ###
 xftalpha 1
@@ -63,7 +63,8 @@ default_outline_color 000000
 #default_color 656667 # Waldorf original colour
 #default_color 7a7a7a # Flame  & Bunsen Grey
 #default_color 929292 # Labs Grey
-default_color C0C0C0 # Silver
+#default_color C0C0C0 # Silver
+default_color lightsalmon
 color0 B0E0E6 # PowderBlue
 color1 778899 # LightSlateGray
 color2 D8BFD8 # Thistle
@@ -129,42 +130,68 @@ double_buffer yes
 # temperature_unit Fahrenheit
 
 #################  End Miscellaneous Section  ###
-#### ${font Liberation Mono:bold:size=10}${alignc}${execpi 600 $HOME/.config/conky/scripts/bunsenweather.sh}
+
 update_interval 1
 
 TEXT
-${color}${alignc}S Y S T E M    I N F O
-${hr}
-Host:${alignr}${nodename}
-Uptime:${alignr}${uptime}
-UTC:${alignr}${utime %H:%M}
+#${alignc}${color0}${time %X}
+#
+# calendar
+#
+#${goto 28}${color}SU MO ${color0}${time %b %Y}${color} FR SA
+#${goto 28}${color1}${execpi 1800 LAR=`date +%-d`; ncal -bh | sed '2d' | sed -e '1d' -e 's/\<'$LAR'\>/${color0}&${color1}/' | sed ':a;N;$!ba;s/\n/\n${goto 28}/g'}${color}${font}
 
-${goto 60}Used${alignr}Size
-Root${goto 60}${fs_used /}${alignr}${fs_size /}
-Home${goto 60}${fs_used /home}${alignr}${fs_size /home}
 
-${goto 60}MEM${alignr}MAX
-RAM${goto 60}${mem}${alignr}${memmax}
-Swap${goto 60}${swap}${alignr}${swapmax}
+S Y S T E M
+${membar 3}
+Uptime${alignr}${uptime}
+#OS${alignr}Bunsen Labs
+#Host${alignr}${nodename}
+#Kernel${alignr}${kernel}
+#Machine${alignr}${machine}
 
-CPU:${goto 60}Used${alignr}GHz
-Avg${goto 60}${if_match ${cpu cpu0}<10}  ${cpu cpu0}\
-${else}${if_match ${cpu cpu0}<100} ${cpu cpu0}\
-${else}${cpu cpu0}${endif}${endif}%${alignr}${freq_g}
+Battery:${alignr}${battery_percent BAT0}% ${alignr}${battery_bar 6,90 BAT0}
+ └───── time remaining: ${alignr}${battery_time BAT0}
 
-${alignc}S H O R T C U T    K E Y S
-${hr}
-[Alt] + F2${alignr}Run Dialog
-[Alt] + F3${alignr}Alt Menu
-[S] + Space${alignr}Main Menu
-[S] + Tab${alignr}Client Menu
-[S] + t${alignr}Terminal
-[S] + f${alignr}File Manager
-[S] + e${alignr}Editor
-[S] + m${alignr}Media Player
-[S] + w${alignr}Web Browser
-[S] + h${alignr}Task Manager
-[S] + l${alignr}Lock Screen
-[S] + v${alignr}Volume Control
-[S] + x${alignr}Logout
-[PrtSc]${alignr}Screenshot
+CPU:$alignr${cpu cpu0}% ${cpubar cpu0 6,90}
+ ├───── ${top name 1}      ${top cpu 1}%
+ ├───── ${top name 2}      ${top cpu 2}%
+ └───── ${top name 3}      ${top cpu 3}%
+
+RAM:$alignr$memperc% ${membar 6,90}
+ ├───── ${top_mem name 1}      ${top_mem mem 1}%
+ ├───── ${top_mem name 2}      ${top_mem mem 2}%
+ └───── ${top_mem name 3}      ${top_mem mem 3}%
+
+Swap:$alignr$swapperc% ${swapbar 6,90}
+Disk:$alignr${fs_used_perc /home}% ${fs_bar 6,90 /home}
+
+
+N E T W O R K
+${membar 3}
+Up:   ${upspeedgraph wlan0 -l -t}
+Down: ${downspeedgraph wlan0 -l -t}
+
+
+W E A T H E R
+${membar 3}
+${execi 600 bash $HOME/1_accuweather/1_accuweather -f}
+
+${font conkyweather:size=40}${execi 600  sed -n '22p' ~/1_accuweather/curr_cond}${font}${goto 75}${voffset -40}CURRENTLY: ${execpi 600 sed -n '2p' $HOME/1_accuweather/curr_cond}°
+${goto 75}${execpi 600 sed -n '4p' $HOME/1_accuweather/curr_cond|fold -w30}
+
+
+${font conkyweather:size=40}${execi 600  sed -n '26p' ~/1_accuweather/first_days}${font}${goto 75}${voffset -40}${execpi 600 sed -n '1p' $HOME/1_accuweather/first_days}: ${execpi 600 sed -n '3p' $HOME/1_accuweather/first_days}°/${execpi 600 sed -n '4p' $HOME/1_accuweather/first_days}°
+${goto 75}${execpi 600 sed -n '5p' $HOME/1_accuweather/first_days|fold -w30}
+
+
+${font conkyweather:size=40}${execi 600  sed -n '27p' ~/1_accuweather/first_days}${font}${goto 75}${voffset -40}${execpi 600 sed -n '6p' $HOME/1_accuweather/first_days}: ${execpi 600 sed -n '8p' $HOME/1_accuweather/first_days}°/${execpi 600 sed -n '9p' $HOME/1_accuweather/first_days}°
+${goto 75}${execpi 600 sed -n '10p' $HOME/1_accuweather/first_days|fold -w30}
+
+
+${font conkyweather:size=40}${execi 600  sed -n '28p' ~/1_accuweather/first_days}${font}${goto 75}${voffset -40}${execpi 600 sed -n '11p' $HOME/1_accuweather/first_days}: ${execpi 600 sed -n '13p' $HOME/1_accuweather/first_days}°/${execpi 600 sed -n '14p' $HOME/1_accuweather/first_days}°
+${goto 75}${execpi 600 sed -n '15p' $HOME/1_accuweather/first_days|fold -w30}
+
+
+${font conkyweather:size=40}${execi 600  sed -n '29p' ~/1_accuweather/first_days}${font}${goto 75}${voffset -40}${execpi 600 sed -n '16p' $HOME/1_accuweather/first_days}: ${execpi 600 sed -n '18p' $HOME/1_accuweather/first_days}°/${execpi 600 sed -n '19p' $HOME/1_accuweather/first_days}°
+${goto 75}${execpi 600 sed -n '20p' $HOME/1_accuweather/first_days|fold -w30}
