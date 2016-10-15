@@ -1,6 +1,6 @@
 %% start of file `template.tex'.
 %% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
-%
+% 
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-project.org/lppl/.
@@ -11,8 +11,8 @@
 % moderncv themes
 \moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+% \renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+% \nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
 % character encoding
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
@@ -23,30 +23,30 @@
 \usepackage{verbatim}
 
 % adjust the page margins
-\usepackage[scale=0.85]{geometry}
+\usepackage[scale=0.94]{geometry}
 \setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+% \setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
 \name{Michael}{Stokley}
-%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+% \title{Resumé title}                               % optional, remove / comment the line if not wanted
 \address{Seattle, WA}%{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{(303) 801-8575}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
-%\phone[fixed]{+2~(345)~678~901}
-%\phone[fax]{+3~(456)~789~012}
+% \phone[fixed]{+2~(345)~678~901}
+% \phone[fax]{+3~(456)~789~012}
 \email{michael@michaelstokley.com}                               % optional, remove / comment the line if not wanted
 \homepage{michaelstokley.com}                         % optional, remove / comment the line if not wanted
 \social[linkedin]{mastokley}                        % optional, remove / comment the line if not wanted
-%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+% \social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
 \social[github]{mastokley}                              % optional, remove / comment the line if not wanted
-%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
-%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+% \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
+% ----------------------------------------------------------------------------------
+% content
+% ----------------------------------------------------------------------------------
 \begin{document}
-%-----       resume       ---------------------------------------------------------
+% -----       resume       ---------------------------------------------------------
 \makecvtitle
 
 \section{Profile}
@@ -63,127 +63,116 @@ helped to co-found a local big data / nlp startup, and have been working as a
 freelance web developer.
 
 \section{Technical Skills}
-\subsection{Proficient}
-Python, Django, Django REST Framework, Pyramid, Git, SQL, HTML/CSS,
-JavaScript/jQuery, Unix systems, Shell Scripting, Org-mode, Regular Expressions
-\subsection{Familiar}
-AWS Deployment, Heroku Deployment, Ansible, PostgreSQL, Nginx, Gunicorn, Scheme, Sed
+\begin{cvcolumns}
+  \cvcolumn{Proficient}{Python, Django, Django REST Framework, Pyramid, Git, SQL, HTML/CSS,
+    JavaScript/jQuery, Unix systems, Shell Scripting, Org-mode, Regular Expressions}
+  \cvcolumn{Familiar}{AWS Deployment, Heroku Deployment, Ansible, PostgreSQL, Nginx, Gunicorn, Scheme, Sed}
+\end{cvcolumns}
+
+\begin{comment}
+  \section{Technical Skills}
+  \subsection{Proficient}
+  Python, Django, Django REST Framework, Pyramid, Git, SQL, HTML/CSS,
+  JavaScript/jQuery, Unix systems, Shell Scripting, Org-mode, Regular Expressions
+  \subsection{Familiar}
+  AWS Deployment, Heroku Deployment, Ansible, PostgreSQL, Nginx, Gunicorn, Scheme, Sed
+\end{comment}
 
 \section{Experience}
 
 \begin{comment}
-\cventry
-{date - date}
-{Employer}
-{Job Title}
-{}
-{City, State}
-{Description of work
+  \cventry
+  {date - date}
+  {Employer}
+  {Job Title}
+  {}
+  {City, State}
+  {Description of work
     \begin{itemize}
     \item specific achievement
     \item specific achievement
     \end{itemize}}
 \end{comment}
 
-\cventry
-{2016.08 - present}
-{Red Mountain Software}
-{Freelance Web Developer}
-{}
-{Seattle, WA}
-{Ongoing work to design, build, and test internal managament application
-  according to client specification.
-    \begin{itemize}
-    \item Designed and implemented database schema
-    \item Wrote models, views, and templates
-    \item Wrote a method to display arbitrary model fields (including reverse
-      relationships) for arbitrary models
-    \end{itemize}}
+\cventry {2016.08 - present} {Red Mountain Software} {Freelance Web Developer}
+{} {Seattle, WA} {Ongoing work to design, build, and test internal managament
+  application according to client specification.
+  \begin{itemize}
+  \item Designed and implemented database schema
+  \item Wrote models, views, and templates
+  \item Wrote a method to display arbitrary model fields (including reverse
+    relationships) for arbitrary models
+  \end{itemize}}
 
-\cventry
-{2016.07 - 2016.09}
-{Sternshus, Inc}
-{Co-founding Software Developer}
-{}
-{Seattle, WA}
-{Provided front-end solutions in the context of rapidly changing
-  business requirements. Worked primarily in Webflow, Django, and MySQL.
-    \begin{itemize}
-    \item Wrote sed and python scripts to automate merging of Webflow files
-      into Django project
-    \end{itemize}}
+\cventry {2016.07 - 2016.09} {Sternshus, Inc} {Co-founding Software Developer}
+{} {Seattle, WA} {Provided front-end solutions in the context of rapidly
+  changing business requirements. Worked primarily in Webflow, Django, and
+  MySQL.
+  \begin{itemize}
+  \item Wrote sed and python scripts to automate merging of Webflow files
+    into Django project
+  \end{itemize}}
 
-\cventry
-{2012.04 - 2015.04}
-{Cleanscapes}
-{AR Specialist}
-{}
-{Seattle, WA}
-{
-    \begin{itemize}
-    \item Wrote and maintained a library of accurate, sophisticated SQL queries
-      to capture evolving data inconsistencies; these queries eliminated 37.5
-      labor hours per month despite at 126\% increase in customer accounts over
-      a two year period
-    \item Designed database reports for internal and external customers, such as
-      government officials and senior management
-    \item Delegated data entry / data revision tasks
-      \item Collaborated with operations, data quality, payment processing, and
-        customer service teams to analyze and improve processes as new city
-        contracts were won
-    \end{itemize}}
+\cventry {2012.04 - 2015.04} {Cleanscapes} {AR Specialist} {} {Seattle, WA} {
+  \begin{itemize}
+  \item Wrote and maintained a library of accurate, sophisticated SQL queries
+    to capture evolving data inconsistencies; these queries eliminated 37.5
+    labor hours per month despite at 126\% increase in customer accounts over
+    a two year period
+  \item Designed database reports for internal and external customers, such as
+    government officials and senior management
+  \item Delegated data entry / data revision tasks
+  \item Collaborated with operations, data quality, payment processing, and
+    customer service teams to analyze and improve processes as new city
+    contracts were won
+  \end{itemize}}
 
 \section{Projects}
 
 \begin{comment}
-\cventry
-{date}
-{github url}
-{name}
-{}
-{}
-{description}
+
+  \cventry
+  {date}
+  {github url}
+  {name}
+  {}
+  {}
+  {description}
+
 \end{comment}
 
-\cventry
-{2016.04}
+\cventry {2016.04}
 {\href{http://github.com/TeamReciprocity/reciprocity}{github.com/TeamReciprocity/reciprocity}}
-{Reciprocity}
-{}
-{}
-{A full stack Python web application for recipe sharing and collaboration. Built
-with Django and PostgreSQL, deployed via Ansible to an AWS EC2 instance.}
-  
+{Reciprocity} {} {} {A full stack Python web application for recipe sharing and
+  collaboration. Built with Django and PostgreSQL, deployed via Ansible to an
+  AWS EC2 instance.}
+
+\cventry {2016.04}
+{\href{https://github.com/mastokley/toy_domain_scraper}{github.com/mastokley/toy\_domain\_scraper}}
+{Toy Domain Scraper} {} {} {Toy web scraper built in Python. Uses breadth-first
+  traversal for fast, reliable results.}
+
+\cventry {2016.04}
+{\href{https://github.com/homequest/homequest}{github.com/homequest/homequest}}
+{HomeQuest} {} {} {A full-stack Python web application to gamify household
+  chores and chore management. Manually implemented authorization,
+  authentication, and row-level security. Built in Pyramid with a PostgreSQL
+  database and deployed on Heroku.}
+
 \section{Education}
-\cventry
-{2016}
-{Certificate}
-{Code Fellows}
-{Seattle, WA}
-{}
-{Advanced Python development, with emphasis on test driven development, pair
-  programming, agile methodologies, version control, and basic data structure
-  and algorithms}
+\cventry {2016} {Certificate} {Code Fellows} {Seattle, WA} {} {Advanced Python
+  development, with emphasis on test driven development, pair programming, agile
+  methodologies, version control, and basic data structure and algorithms}
 
-\cventry
-{2012--2014}
-{Coursework}
-{North Seattle College}
-{Seattle, WA}
-{}
-{Math, Computer Science, and Statistics}
+\cventry {2012--2014} {Coursework in Math, Computer Science, and Statistics}
+{North Seattle College} {Seattle, WA} {} {}
 
-\cventry
-{2009}
-{B. A.}
-{St. John's College, Annapolis, MD}
-{Annapolis, MD}
-{}
-{Double Major: Philosophy and the History of Math and Science\newline{}
-Double Minor: Classical Studies and Comparative Literature}
+\cventry {2009} {B. A. in Philosophy} {St. John's College, Annapolis, MD}
+{Annapolis, MD} {} {}
+% {Double Major: Philosophy and the History of Math and Science\newline{} Double Minor: Classical Studies and Comparative Literature}
 
 \clearpage
-%-----       letter       ---------------------------------------------------------
+% -----       letter       ---------------------------------------------------------
 % recipient data
 \recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
 \date{January 01, 1984}
@@ -204,7 +193,7 @@ Albert Einstein discovered that $e=mc^2$ in 1905.
 
 \makeletterclosing
 
-%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+% \clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
 \end{document}
 
 
