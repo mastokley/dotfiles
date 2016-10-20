@@ -11,3 +11,13 @@ mu4e
 offlineimap
 pidgin
 texlive
+postgresql
+libpq-dev  # for postgres
+libsqlite3-dev  # for sqlite3
+
+# for python in general
+libncursesw5-dev
+libssl-dev
+libgdbm-dev
+libc6-dev
+tk-dev
