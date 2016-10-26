@@ -3,7 +3,7 @@ alias work-on-cacr='. ~/.virtualenvs/cacr/bin/activate; cd ~/Projects/CACR; eval
 
 alias work-on-nord='. ~/.virtualenvs/nord_entities/bin/activate; cd ~/Projects/nord_entities; eval $(ssh-agent)'
 
-alias work-on-trumptweets='. ~/.virtualenvs/trumptweets/bin/activate; cd ~/Projects/trumptweets; eval $(ssh-agent)'
+alias work-on-trumptweets='. ~/.virtualenvs/trumptweets/bin/activate; cd ~/Projects/trumptweets; eval $(ssh-agent); . ~/Projects/trumptweets/.env'
 
 alias work-on-prospecto='. ~/sternshus/prospecto.us/michael-secret.env; . ~/.virtualenvs/prospecto.us/bin/activate; cd ~/sternshus/prospecto.us'
 
