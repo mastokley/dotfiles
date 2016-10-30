@@ -1,0 +1,7 @@
+My education and my professional background make me a terrific candidate. I studied math and CompSci for two years at North Seattle College, gaining a solid grasp of comp sci basics and OOP via Java and Python.
+
+In addition, I completed a rigorous ten-week course in Python development. Many bootcamps focus on popular frameworks at the expense of basic comp sci theory. Code Fellows, however, placed an emphasis on data structures, basic algorithms, and OOP.
+
+Afterwards, I co-founded Sternshus, a big data startup. I built front-end solutions with Django and Webflow. I'm most proud of having written sed and python scripts to automate the process of merging generic templates into the existing Django app.
+
+I encourage you to look at my projects at michaelstokley.com, such as: a web scraper that uses breadth-first traversal; an nlp script that turns tweets into poems; or my ongoing work blogging through the comp sci classic, "The Structure and Interpretation of Computer Programs".
