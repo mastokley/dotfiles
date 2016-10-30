@@ -1,0 +1,18 @@
+Dear Hiring Manager,
+
+My education and my professional background make me a terrific candidate for this position. I studied both math and computer science for two years at North Seattle College (cumulative GPA: 3.65). There I gained a solid grasp of computer science fundamentals and object-oriented design via Java, and later Python (both of which are object-oriented).
+
+In addition, I recently completed a rigorous ten-week course in Python development. Many coding bootcamps focus exclusively on popular frameworks and developer tools at the expense of basic computer science theory. The course I took at Code Fellows, however, placed an emphasis on data structures, basic algorithms, and object-oriented design. You may be interested in viewing the final project I worked on at Code Fellows; it's a full-stack Python web application for recipe sharing and collaboration, built with Django and PostgreSQL. The site is live at reciprocity.site, and you can view the source code at github.com/TeamReciprocity/reciprocity.
+
+After completing the course at Code Fellows, I helped to co-found Sternshus, a big data startup in Seattle. I worked primarily to provide front-end solutions using Django and Webflow. Webflow is terrific at quickly generating polished, generic templates; integrating those templates into an existing full stack web application, on the other hand, is time consuming. I took initiative and designed, wrote, and tested sed and python scripts to automate the process as much as possible. As a result, Sternshus is more agile and better equipped to respond to rapidly changing opportunities.
+
+Please consider the following additional qualifications. Having used Debian over the last four years, I have a good knowledge of Unix systems. At my previous position as an AR Specialist, I wrote and maintained a library of dozens of SQL queries, many of which I wrote on-demand for both internal and external customers. Finally, I have a thorough understanding of Git.
+
+Altogether, these three avenues of education have provided me with a strong foundation in computer science and excellent programming skills in Python.
+
+I encourage you to visit my website, michaelstokley.com. There, you can view some of the projects I've been working on, such as: a web scraper that uses breadth-first traversal for fast, reliable results; a natural language processing script that turns tweets into poems; or my ongoing progress blogging through the computer science classic, "The Structure and Interpretation of Computer Programs".
+
+Thank you for considering my application. I look forward to your response.
+
+Sincerely,
+Michael Stokley
