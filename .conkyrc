@@ -173,25 +173,25 @@ Up:   ${upspeedgraph wlan0 -l -t}
 Down: ${downspeedgraph wlan0 -l -t}
 
 
-W E A T H E R
-${membar 3}
-${execi 600 bash $HOME/1_accuweather/1_accuweather -f}
-
-${font conkyweather:size=40}${execi 600  sed -n '22p' ~/1_accuweather/curr_cond}${font}${goto 75}${voffset -40}CURRENTLY: ${execpi 600 sed -n '2p' $HOME/1_accuweather/curr_cond}°
-${goto 75}${execpi 600 sed -n '4p' $HOME/1_accuweather/curr_cond|fold -w30}
-
-
-${font conkyweather:size=40}${execi 600  sed -n '26p' ~/1_accuweather/first_days}${font}${goto 75}${voffset -40}${execpi 600 sed -n '1p' $HOME/1_accuweather/first_days}: ${execpi 600 sed -n '3p' $HOME/1_accuweather/first_days}°/${execpi 600 sed -n '4p' $HOME/1_accuweather/first_days}°
-${goto 75}${execpi 600 sed -n '5p' $HOME/1_accuweather/first_days|fold -w30}
-
-
-${font conkyweather:size=40}${execi 600  sed -n '27p' ~/1_accuweather/first_days}${font}${goto 75}${voffset -40}${execpi 600 sed -n '6p' $HOME/1_accuweather/first_days}: ${execpi 600 sed -n '8p' $HOME/1_accuweather/first_days}°/${execpi 600 sed -n '9p' $HOME/1_accuweather/first_days}°
-${goto 75}${execpi 600 sed -n '10p' $HOME/1_accuweather/first_days|fold -w30}
-
-
-${font conkyweather:size=40}${execi 600  sed -n '28p' ~/1_accuweather/first_days}${font}${goto 75}${voffset -40}${execpi 600 sed -n '11p' $HOME/1_accuweather/first_days}: ${execpi 600 sed -n '13p' $HOME/1_accuweather/first_days}°/${execpi 600 sed -n '14p' $HOME/1_accuweather/first_days}°
-${goto 75}${execpi 600 sed -n '15p' $HOME/1_accuweather/first_days|fold -w30}
-
-
-${font conkyweather:size=40}${execi 600  sed -n '29p' ~/1_accuweather/first_days}${font}${goto 75}${voffset -40}${execpi 600 sed -n '16p' $HOME/1_accuweather/first_days}: ${execpi 600 sed -n '18p' $HOME/1_accuweather/first_days}°/${execpi 600 sed -n '19p' $HOME/1_accuweather/first_days}°
-${goto 75}${execpi 600 sed -n '20p' $HOME/1_accuweather/first_days|fold -w30}
+# W E A T H E R
+# ${membar 3}
+# ${execi 600 bash $HOME/1_accuweather/1_accuweather -f}
+# 
+# ${font conkyweather:size=40}${execi 600  sed -n '22p' ~/1_accuweather/curr_cond}${font}${goto 75}${voffset -40}CURRENTLY: ${execpi 600 sed -n '2p' $HOME/1_accuweather/curr_cond}°
+# ${goto 75}${execpi 600 sed -n '4p' $HOME/1_accuweather/curr_cond|fold -w30}
+# 
+# 
+# ${font conkyweather:size=40}${execi 600  sed -n '26p' ~/1_accuweather/first_days}${font}${goto 75}${voffset -40}${execpi 600 sed -n '1p' $HOME/1_accuweather/first_days}: ${execpi 600 sed -n '3p' $HOME/1_accuweather/first_days}°/${execpi 600 sed -n '4p' $HOME/1_accuweather/first_days}°
+# ${goto 75}${execpi 600 sed -n '5p' $HOME/1_accuweather/first_days|fold -w30}
+# 
+# 
+# ${font conkyweather:size=40}${execi 600  sed -n '27p' ~/1_accuweather/first_days}${font}${goto 75}${voffset -40}${execpi 600 sed -n '6p' $HOME/1_accuweather/first_days}: ${execpi 600 sed -n '8p' $HOME/1_accuweather/first_days}°/${execpi 600 sed -n '9p' $HOME/1_accuweather/first_days}°
+# ${goto 75}${execpi 600 sed -n '10p' $HOME/1_accuweather/first_days|fold -w30}
+# 
+# 
+# ${font conkyweather:size=40}${execi 600  sed -n '28p' ~/1_accuweather/first_days}${font}${goto 75}${voffset -40}${execpi 600 sed -n '11p' $HOME/1_accuweather/first_days}: ${execpi 600 sed -n '13p' $HOME/1_accuweather/first_days}°/${execpi 600 sed -n '14p' $HOME/1_accuweather/first_days}°
+# ${goto 75}${execpi 600 sed -n '15p' $HOME/1_accuweather/first_days|fold -w30}
+# 
+# 
+# ${font conkyweather:size=40}${execi 600  sed -n '29p' ~/1_accuweather/first_days}${font}${goto 75}${voffset -40}${execpi 600 sed -n '16p' $HOME/1_accuweather/first_days}: ${execpi 600 sed -n '18p' $HOME/1_accuweather/first_days}°/${execpi 600 sed -n '19p' $HOME/1_accuweather/first_days}°
+# ${goto 75}${execpi 600 sed -n '20p' $HOME/1_accuweather/first_days|fold -w30}
