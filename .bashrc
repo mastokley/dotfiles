@@ -118,5 +118,7 @@ GIT_PS1_SHOWCOLORHINTS=1
 . ~/.git-prompt.sh
 PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 
-# fix python3.5
-PATH=/usr/bin:/opt/python3.5.2/bin:$PATH
+# PATH /opt
+PATH=$PATH:/opt/python3.5.2/bin
+PATH=$PATH:/opt/spark-2.0.2-bin-hadoop2.7/bin
+PATH=$PATH:/opt/sbt-launcher-packaging-0.13.13/bin

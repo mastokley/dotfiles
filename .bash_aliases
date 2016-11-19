@@ -9,7 +9,9 @@ alias work-on-bulldozer_severe='. ~/.virtualenvs/bulldozer_severe/bin/activate; 
 alias dwarf-fortress='nohup /opt/df_linux/./df &'
 alias tor-browser='/opt/tor-browser_en-US/Browser/start-tor-browser --detach'
 alias rimworld='/opt/Rim\ World/start_RimWorld.sh'
-alias pyspark='/opt/spark-2.0.2-bin-hadoop2.7/bin/pyspark'
+
+# spark
+export PYSPARK_DRIVER_PYTHON=ipython  # run pyspark shell with iPython
 
 # colors
 export COLOR_NC='\e[0m' # No Color
