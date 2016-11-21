@@ -11,7 +11,12 @@ alias tor-browser='/opt/tor-browser_en-US/Browser/start-tor-browser --detach'
 alias rimworld='/opt/Rim\ World/start_RimWorld.sh'
 
 # spark
-export PYSPARK_DRIVER_PYTHON=ipython  # run pyspark shell with iPython
+export PYSPARK_PYTHON=python3.5
+
+# java 7 vs 8 (provisional solution)
+export JAVA_8_HOME='/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin'
+alias use-java8='export PATH=$JAVA_8_HOME:$PATH'
+alias deactivate-java8='export PATH=`echo $PATH | sed -e "s|$JAVA_8_HOME:||"`'
 
 # colors
 export COLOR_NC='\e[0m' # No Color
