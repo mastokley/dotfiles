@@ -122,3 +122,8 @@ PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 PATH=$PATH:/opt/python3.5.2/bin
 PATH=$PATH:/opt/spark-2.0.2-bin-hadoop2.7/bin
 PATH=$PATH:/opt/sbt-launcher-packaging-0.13.13/bin
+
+# virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Projects
+source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
