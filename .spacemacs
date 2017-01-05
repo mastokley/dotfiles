@@ -34,6 +34,7 @@ values."
      games
      git
      ;; haskell
+     java
      javascript
      latex
      markdown
@@ -240,7 +241,11 @@ user code."
   "Configuration function for user code.
  This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
-  ;; org config
+  ;; java layer
+  (setq eclim-eclipse-dirs "~/opt/eclipse"
+        eclim-executable "~/opt/eclipse/eclim")
+
+  ;; org
   (setq org-agenda-include-diary t)
   (org-babel-do-load-languages
    'org-babel-load-languages
@@ -254,7 +259,6 @@ layers configuration. You are free to put any user code."
      ))
 
   ;; misc
-  (fancy-battery-mode)
   (global-centered-cursor-mode +1)
   (spaceline-toggle-minor-modes-off)
   (global-flycheck-mode 1)
